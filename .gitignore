@@ -1,4 +1,5 @@
 *.json
 *.crt
 *.key
+builder.ps1
 temp.exe
