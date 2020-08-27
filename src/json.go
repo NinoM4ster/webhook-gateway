@@ -10,7 +10,7 @@ import (
 
 func jsonInit() {
 	if _, err := os.Stat("config.json"); os.IsNotExist(err) {
-		defaultConfig := Config{ListenPort: "8443", CertFile: "webhook.crt", KeyFile: "webhook.key"}
+		defaultConfig := Config{ListenPort: "8443", CertFile: "ChangeMe.crt", KeyFile: "ChangeMe.key"}
 		fmt.Println("Config file not found. Generating one...")
 		err = setConfig(defaultConfig)
 		if err != nil {

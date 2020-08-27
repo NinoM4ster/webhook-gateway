@@ -1,0 +1,12 @@
+{
+	"bots": [
+		{
+			"uri": "/ph-tsbwebhook",
+			"host": "https://localhost:8444"
+		},
+		{
+			"uri": "/759422639AAH_DVPLRksoZ3-HhIreW1SIF88aTbHz4Bg.php",
+			"host": "https://192.168.10.6:8443"
+		}
+	]
+}
