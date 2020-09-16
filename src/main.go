@@ -54,7 +54,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 			defer resp.Body.Close()
 			body, _ := ioutil.ReadAll(resp.Body)
 			w.Write(body)
-			fmt.Println("> " + a.URI + " OK")
+			status := "OK"
+			if resp.StatusCode != 200 {
+				status = "WARN"
+			}
+			fmt.Printf("> %v %v (%v)\n", a.URI, status, resp.StatusCode)
 			return
 		}
 	}
